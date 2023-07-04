@@ -1,0 +1,44 @@
+*{
+ color:red;
+ background-color: rgb(0, 0, 0);
+}
+#sec{
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(15, 127, 179);
+    position: relative;
+}
+#first{
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(10, 148, 33);
+}
+.container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 25%;
+    text-align: left;
+}
+#sec::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    animation: type 3s steps(12) 0s infinite alternate;
+    border-left: 2px solid red;
+}
+@keyframes type{
+    0%{
+        left: 0%;
+    }
+    
+   
+
+    100%{
+        left: 109%;
+    }
+
+}
